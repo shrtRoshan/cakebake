@@ -19,8 +19,6 @@ const DarkMode = () => {
     }
   }, [theme]);
 
-
-
   return (
     <div className="relative">
       <img src={LightButton} alt="" 
