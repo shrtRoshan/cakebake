@@ -4,7 +4,7 @@ import Img2 from "../../assets/cakes/cake2.jpg"
 import Img3 from "../../assets/cakes/cake3.jpg"
 import Img4 from "../../assets/cakes/cake4.jpg"
 import Img5 from "../../assets/cakes/cake5.jpg"
-import Img6 from "../../assets/cakes/cake6.jpg"
+// import Img6 from "../../assets/cakes/cake6.jpg"
 import { FaStar } from 'react-icons/fa6'
 
 const ProductsData = [
@@ -48,14 +48,14 @@ const ProductsData = [
         color: 'pink',
         aosDelay: "500"
     },
-    {
-        id: 6,
-        img: Img6,
-        title: "Blueberry Bliss Cake",
-        rating: 4.7,
-        color: 'blue',
-        aosDelay: "600"
-    },
+    // {
+    //     id: 6,
+    //     img: Img6,
+    //     title: "Blueberry Bliss Cake",
+    //     rating: 4.7,
+    //     color: 'blue',
+    //     aosDelay: "600"
+    // },
 ];
 
 const Products = () => {
