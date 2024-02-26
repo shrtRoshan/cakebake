@@ -10,29 +10,29 @@ const TestimonialData = [
     },
     {
         id: "2",
-        name: "Roshan",
+        name: "Alice",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere mollitia harum nobis adipisci? Expedita quae officiis fugit nostrum nesciunt.",
         img: "https://picsum.photos/101/102"
     },
     {
         id: "3",
-        name: "Roshan",
+        name: "Bob",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere mollitia harum nobis adipisci? Expedita quae officiis fugit nostrum nesciunt.",
         img: "https://picsum.photos/101/103"
     },
     {
         id: "4",
-        name: "Roshan",
+        name: "Emily",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere mollitia harum nobis adipisci? Expedita quae officiis fugit nostrum nesciunt.",
         img: "https://picsum.photos/101/104"
     },
     {
         id: "5",
-        name: "Roshan",
+        name: "Michael",
         text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam facere mollitia harum nobis adipisci? Expedita quae officiis fugit nostrum nesciunt.",
         img: "https://picsum.photos/101/105"
     },
-]
+];
 
 const Testimonials = () => {
 

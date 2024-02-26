@@ -3,17 +3,18 @@ import Logo from "../../assets/logo.png";
 import { IoMdSearch } from "react-icons/io";
 import { FaCaretDown, FaCartShopping } from "react-icons/fa6";
 import DarkMode from './DarkMode';
+import { Link } from 'react-router-dom';
  
 const Menu = [
   {
     id : 1,
     name : "Home",
-    link: "/#",
+    link: "/",
   },
   {
     id : 2,
-    name : "About",
-    link: "/#",
+    name : "Products",
+    link: "/products",
   }
 ]
 const DropdownLinks =[
@@ -35,11 +36,11 @@ const Navbar = () => {
       <div className='bg-primary/40 py-3 sm:py-0'>
         <div className='container flex justify-between items-center'>
             <div>
-                <a href="#"
+                <Link to="#"
                 className="font-bold text-2xl sm:text-3xl flex gap-2">
                     <img src={Logo} alt="Logo" 
                     className="w-12 uppercase" /><p className='mt-2'>CakeBake</p>
-                </a>
+                </Link>
             </div>
             {/* Search bar */}
             <div className='flex justify-between items-center gap-4'>
@@ -92,8 +93,8 @@ const Navbar = () => {
           {
             Menu.map((data) => (
               <li key={data.id}>
-                <a href={data.link}
-                className='inline-block px-4 hover:text-primary duration-200'>{data.name}</a>
+                <Link to={data.link}
+                className='inline-block px-4 hover:text-primary duration-200'>{data.name}</Link>
               </li>
             ))}
             {/* dropdown menu */}

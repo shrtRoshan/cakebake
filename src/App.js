@@ -1,14 +1,12 @@
 import React from 'react';
 import Hero from "./components/Hero/Hero";
 import Navbar from "./components/Navbar/Navbar";
-import Products from "./components/Products/Products";
+import Products from "./Pages/ProductsPage";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import TopProducts from './components/TopProducts/TopProducts';
-import Banner from './components/Banner/Banner';
-import Subscribe from './components/Subscribe/Subscribe';
-import Testimonials from './components/Testimonials/Testimonials';
 import Footer from './components/Footer/Footer';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Pages/Home';
 
 function App() {
   React.useEffect(() => {
@@ -22,17 +20,25 @@ function App() {
   }, []);
 
   return (
-    <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
-      <Navbar />
-      <Hero />
-      <Products />
-      <TopProducts />
-      <Banner />
-      <Subscribe />
-      <Products />
-      <Testimonials />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <div className='bg-white dark:bg-gray-900 dark:text-white duration-200'>
+        <Navbar />
+        <Hero />
+        <Routes>
+            <Route>
+              <Route path="/" element={<Home />} />
+              <Route path="/shop" element={<Products />} />
+            </Route>
+        </Routes>
+        {/* <Products />
+        <TopProducts />
+        <Banner />
+        <Subscribe />
+        <Products />
+        <Testimonials /> */}
+        <Footer />
+      </div>
+    </BrowserRouter>
   );
 }
 
