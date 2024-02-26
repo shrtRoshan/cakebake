@@ -31,7 +31,7 @@ const DropdownLinks =[
 ]
 const Navbar = () => {
   return (
-    <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 relative z-40'>
+    <div className='shadow-md bg-white dark:bg-gray-900 dark:text-white duration-200 sticky top-0 z-50'>
         {/* Upper Navbar */}
       <div className='bg-primary/40 py-3 sm:py-0'>
         <div className='container flex justify-between items-center'>
@@ -39,7 +39,7 @@ const Navbar = () => {
                 <Link to="#"
                 className="font-bold text-2xl sm:text-3xl flex gap-2">
                     <img src={Logo} alt="Logo" 
-                    className="w-12 uppercase" /><p className='mt-2'>CakeBake</p>
+                    className="w-12 uppercase" /><p className='mt-2 italic'>CakeBake</p>
                 </Link>
             </div>
             {/* Search bar */}
