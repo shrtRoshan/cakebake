@@ -26,7 +26,7 @@ const Subscribe = () => {
             data-aos='fade-up'
             type="text" 
             placeholder='Enter your email'
-            className='w-full p-3'
+            className='w-full p-3 text-black dark:text-white dark:bg-gray-800'
             />
         </div>
       </div>
