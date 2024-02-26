@@ -21,12 +21,12 @@ const DropdownLinks =[
   {
     id : 1,
     name : "Home",
-    link: "/#",
+    link: "/",
   },
   {
     id : 2,
-    name : "About",
-    link: "/#",
+    name : "Products",
+    link: "/products",
   }
 ]
 const Navbar = () => {
@@ -110,8 +110,8 @@ const Navbar = () => {
                   <ul className='absolute z-[9900] hidden group-hover:block w-[150px] rounded-md bg-white p-2 text-black shadow-md'>
                     {DropdownLinks.map((data) => (
                       <li key={data.id}>
-                        <a href={data.link}
-                        className='inline-block w-full rounded-md p-2 hover:bg-primary/20'>{data.name}</a>
+                        <Link to={data.link}
+                        className='inline-block w-full rounded-md p-2 hover:bg-primary/20'>{data.name}</Link>
                       </li>
                     ))}
                   </ul>
