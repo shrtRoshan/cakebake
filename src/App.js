@@ -7,6 +7,7 @@ import "aos/dist/aos.css";
 import Footer from './components/Footer/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
+import ProductsPage from './Pages/ProductsPage';
 
 function App() {
   React.useEffect(() => {
@@ -27,15 +28,9 @@ function App() {
         <Routes>
             <Route>
               <Route path="/" element={<Home />} />
-              <Route path="/shop" element={<Products />} />
+              <Route path="/products" element={<ProductsPage />} />
             </Route>
         </Routes>
-        {/* <Products />
-        <TopProducts />
-        <Banner />
-        <Subscribe />
-        <Products />
-        <Testimonials /> */}
         <Footer />
       </div>
     </BrowserRouter>
